@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Ayii ♡</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<audio id="music" loop><source src="music/lagu.mp3" type="audio/mpeg"></audio>
+
+<section class="page active" id="opening">
+  <div class="stars"></div>
+  <div class="content">
+    <p class="eyebrow">a little something for you</p>
+    <img src="images/foto1.jpg" class="main-photo">
+    <h1>hi, ayii 🤍</h1>
+    <p>aku bikin sesuatu kecil buat kamu.<br><i>just because you're you.</i></p>
+    <button onclick="startWebsite()">open this ♡</button>
+  </div>
+</section>
+
+<section class="page" id="letter">
+  <div class="content">
+    <div class="icon float">💌</div>
+    <h2>for you, sayangg</h2>
+    <p>aku tahu akhir-akhir ini kamu lagi banyak banget kesibukan. kerja, urusan ini itu, sampai mungkin kamu sendiri jarang punya waktu buat benar-benar santai.</p>
+    <p>dan aku tahu kita juga nggak punya kemewahan buat sekadar ketemu ketika salah satu dari kita lagi kangen.</p>
+    <p>karena kita cuma bisa bertemu lewat layar, lewat chat, lewat call, dan lewat suara yang kadang jadi satu-satunya cara buat merasa dekat.</p>
+    <p><i>sometimes i miss you more than i say.</i></p>
+    <p>tapi hari ini aku nggak mau bikin kamu merasa harus selalu punya waktu buat aku. aku cuma mau kamu tahu kalau di tengah kesibukan kamu, ada seseorang yang tetap mikirin kamu dari jauh.</p>
+    <button onclick="nextPage('distance')">continue ♡</button>
+  </div>
+</section>
+
+<section class="page" id="distance">
+  <div class="content">
+    <div class="distance"><span>♡</span><div class="route"><span class="plane">✈</span></div><span>♡</span></div>
+    <h2>different places, same little story.</h2>
+    <p>kadang aku masih suka mikir, kenapa sih kita harus sejauh ini?</p>
+    <p>pengen rasanya bisa tiba-tiba ketemu kamu, duduk sebelahan, ngobrol random, atau bahkan cuma diem-dieman tapi tetap merasa ditemani.</p>
+    <p>tapi untuk sekarang, <i>this is what we have.</i></p>
+    <p>dan walaupun jaraknya jauh, kamu tetap jadi salah satu orang yang paling dekat sama hatiku.</p>
+    <button onclick="nextPage('busy')">next ♡</button>
+  </div>
+</section>
+
+<section class="page" id="busy">
+  <div class="content">
+    <img src="images/foto2.jpg" class="polaroid">
+    <h2>when you're busy...</h2>
+    <p>aku nggak akan bohong, kadang aku kesepian kalau kamu lagi sibuk.</p>
+    <p>kadang aku juga overthinking karena pengen ngobrol tapi kamu lagi nggak bisa.</p>
+    <p>tapi aku tahu kamu bukan sengaja menjauh. kamu cuma lagi punya banyak hal yang harus diselesaikan.</p>
+    <p><i>so, take your time.</i></p>
+    <p>kerjain semuanya pelan-pelan. jangan lupa makan, jangan terlalu capek, dan jangan lupa istirahat.</p>
+    <p>aku mungkin tetap bakal bilang kangen beberapa kali hehe. tapi bukan berarti aku mau ganggu kamu.</p>
+    <p><i>i just miss you, that's all. 🤍</i></p>
+    <button onclick="nextPage('future')">next ♡</button>
+  </div>
+</section>
+
+<section class="page" id="future">
+  <div class="content">
+    <div class="icon heartbeat">♡</div>
+    <h2>maybe someday...</h2>
+    <p>kita pernah ngomongin masa depan. tentang nikah, tentang nanti kalau akhirnya kita bisa benar-benar hidup bareng.</p>
+    <p>aku nggak tahu kapan tepatnya semua itu bakal terjadi. tapi aku suka membayangkannya.</p>
+    <p>suatu hari nanti mungkin aku nggak perlu lagi nunggu kamu online buat bisa ngobrol.</p>
+    <p>nggak perlu lagi bilang good night lewat chat. nggak perlu lagi kangen sambil lihat foto di layar.</p>
+    <p>karena kamu ada di sebelah aku.</p>
+    <p><i>maybe someday, distance will just be a story we used to tell.</i></p>
+    <button onclick="nextPage('ending')">one last thing...</button>
+  </div>
+</section>
+
+<section class="page" id="ending">
+  <div class="content">
+    <img src="images/foto3.jpg" class="final-photo">
+    <h1>happy boyfriend day, ayii 🤍</h1>
+    <p>thank you for being part of my life.</p>
+    <p>makasih udah tetap ada, bahkan di hari-hari ketika semuanya nggak selalu mudah.</p>
+    <p>aku nggak minta kamu harus selalu punya waktu buat aku.</p>
+    <p>aku cuma mau kamu tahu...</p>
+    <h2 class="special">wherever you are,<br>someone here still loves you.</h2>
+    <p>jadi sekarang sana lanjut kerja 😭 jangan malah scroll website ini sampai lupa kerja.</p>
+    <p><i>i love you, sayangg. 🤍</i></p>
+    <button onclick="secretMessage()">psst... one more thing</button>
+  </div>
+</section>
+
+<div id="secret" class="secret">
+  <div class="secret-box">
+    <div class="icon heartbeat">♡</div>
+    <h2>one more thing...</h2>
+    <p>kalau suatu hari nanti kita akhirnya bisa ketemu dan semua jarak ini udah nggak ada, aku harap kamu masih inget sama website kecil yang pernah aku bikin buat kamu.</p>
+    <p>karena waktu aku bikin ini, aku cuma punya satu tujuan:</p>
+    <h3>bikin kamu merasa disayang, <i>even from miles away.</i> 🤍</h3>
+    <button onclick="closeSecret()">close ♡</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
